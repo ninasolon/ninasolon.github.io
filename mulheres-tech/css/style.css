@@ -73,5 +73,54 @@ body {
 
 .logo--rodape {
     width: 120px;
-    margin: 15px 15px;
+    margin: 15px 15px 15px 0;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .artigo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .navegacao {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .navegacao__menu {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70,3195%;
+    }
+
+    .artigo {
+        width: 100%;
+    }
+
+    .rodape {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .logo--rodape {
+        width: 30%;
+    }
 }
