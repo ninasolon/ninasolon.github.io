@@ -1,92 +1,84 @@
-body {
-    background-color: rgba(179, 130, 186, 36%);
-    font-family: 'Montserrat', sans-serif; 
-    box-sizing: border-box;
-    margin: 0;
-}
-
-.cabecalho {
-    text-align: center;
-}
-
-.cabecalho__titulo {
-    color: #5d1277;
-    font-weight: bold;
+body { /* Vai aplicar esses estilos a tudo que estiver dentro do body */
+    background-color: rgba(179, 130, 186, 36%); /*Uma das formas de selecionar cor, essa pode escolher a opacidade */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.container__conteudo, .container__ilustracao {
+.titulo-pagina {
+    text-align: center;
+    color: purple;
+}
+
+.conteudo {
+    width: 70.3125%;
+    margin: 0 auto; /* Truque pra centralizar, só funciona com elementos block */
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.chamada, .ilustracao {
+    width: 44.444444%;
     display: inline-block;
-    width: 45%;
-    margin: 0 20px;
+    margin: 10px;
     vertical-align: middle;
 }
 
-.conteudo__subtitulo {
-    font-size: 16px;
-    margin: 10px 0;
+@media (max-width: 768px) {
+    .chamada, .ilustracao {
+    width: 100%;
+    display: block;
+    margin: 2vw;
+}
 }
 
-.ilustracao__animacao {
-    width: 400px;
+.ilustracao > img { /* seleciona as tags img dentro da classe .conteudo-principal__imagem */
+    width: 100%;
 }
 
-.conteudo__btn--roxo {
-    background-color: #5d1277;
-    padding: 20px;
-    border: 1px solid #5d1277;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif; 
-    text-transform: uppercase;
-    margin: 5px;
-}
-
-.conteudo__btn--transparente {
-    background-color: transparent;
-    padding: 20px;
-    border: 1px solid #5d1277;
-    color: #5d1277;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif; 
-    text-transform: uppercase;
-    margin: 5px;
+.call-to-action {
+    margin-top: 40px;
 }
 
 @media (max-width: 768px) {
-
-    .cabecalho__subtitulo {
-        margin-bottom: 0;
-    }
-
-    .container {
-        width: 100%;
-        margin: 0;
-    }
-
-    .container__conteudo {
-        width: 92%;
-        margin: 0;
-        text-align: center;
-        padding: 5% 4% 0 4%;
-    }
-
-    .container__ilustracao {
-        width: 92%;
-        margin: 0;
-        text-align: center;
-        padding: 5% 4% 5% 4%;
+    .call-to-action {
+    display: flex;
+    flex-wrap: wrap;
     }
 }
 
 @media (max-width: 420px) {
+    .call-to-action {
+    flex-wrap: wrap;
+    }
+}
 
-    .ilustracao__animacao {
-        width: 100%;
-    }  
+.btn {
+    padding: 20px;
+    text-decoration: none; /* Tira o sublinhado do link */
+    text-transform: uppercase; /*Deixa todas as letras maiúsculas sem prejudicar a acessibilidade */
+    border: 1px solid #5d1277; /* Borda ao redor do elemento. Primeiro define a largura da borda, depois o estilo, por último a cor */
+}
+
+@media (max-width: 768px) {
+    .btn {
+    margin: 2vw;
+    }
+}
+
+.btn--saiba-mais {
+    background-color: #5d1277;
+    color: white;
+}
+
+.btn--participe {
+    color: #5d1277; /* Outra forma muito comum de escolher a cor, pelo código HEX */
 }

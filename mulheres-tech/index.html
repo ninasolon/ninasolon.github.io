@@ -9,34 +9,40 @@
 </head>
 <body>
     <nav class="navegacao">
-        <img class="logo" src="./img/logo.png" alt="Mulheres em Tech">
-        <ul class="navegacao__menu">
-            <li><a href="index.html" class="menu__link">Home</a></li>
-            <li><a href="sobre.html" target="_blank" class="menu__link">Sobre</a></li>
-            <li><a href="http://linkedin.com/ninasolon" target="_blank" class="menu__link">Contato</a></li>
+        <img src="./img/logo.png" alt="Mulheres em Tech" class="logo">
+        <ul class="menu">
+            <li class="menu__item"><a href="#">Sobre</a></li>
+            <li class="menu__item"><a href="#">Conteúdo</a></li>
+            <li class="menu__item"><a href="#">Contato</a></li>
         </ul>
     </nav>
+    
+    <main>
+        <section class="conteudo">
+                <aside class="autora">
+                    <figure>
+                        <img src="./img/autora.jpg" alt="Foto da autora" class="foto--redonda">
+                        <figcaption class="legenda">
+                            <p class="legenda__texto"><span class="legenda__autora--destacado">Hermione Granger</span>, bruxa e programadora</p>
+                        </figcaption>
+                    </figure>
+                </aside>
+        
+                <article class="post">
+                    <h2 class="titulo-post">Conheça mulheres que fizeram história na computação</h2>
+                    <ol>
+                        <li>Ada Lovelace</li>
+                        <li>Grace Hopper</li>
+                        <li>Karen Sparck Jones</li>
+                    </ol>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam ipsum natus deserunt excepturi hic molestias, labore quas culpa modi magni unde veritatis eligendi eum impedit eaque porro, officiis dignissimos.</p>
+                </article>
+        </section>
+    </main>
 
-    <section class="conteudo">
-        <div class="container">
-            <aside class="autora">
-                <img src="./img/nina-solon.jpeg" alt="Foto de Nina Solon" title="Foto de Nina Solon" class="autora__foto">
-                <p><span class="autora__nome">Nina Solon</span>, jornalista e programadora</p>
-            </aside>
-            <article class="artigo">
-                <h2>Conheça mulheres na tecnologia</h2>
-                <ol>
-                    <li>Ada Lovelace</li>
-                    <li>Grace Hopper</li>
-                    <li>Margareth Hamilton</li>
-                </ol>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum debitis, molestiae tenetur, eligendi placeat reiciendis voluptatibus esse reprehenderit nobis, veritatis maiores fugiat ut voluptate quia quisquam. Est sequi rerum quod!</p>
-            </article>
-        </div>
-    </section>
-    <footer class="rodape">
-        <img src="./img/reprograma.png" alt="Logo Reprograma" title="Logo Reprograma" class="logo--rodape">
-        <p class="rodape__texto">Desenvolvido por Nina Solon</p>
+    <footer class="footer">
+        <img src="./img/reprograma.png" alt="Logo da Reprograma" class="logo logo--pequeno">
+        <p class="creditos">Desenvolvido pela Reprograma</p>
     </footer>
 </body>
 </html>
