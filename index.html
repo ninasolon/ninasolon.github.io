@@ -1,128 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nina Solon {reprograma}</title>
-    <link rel="shortcut icon" type="image/png" href="https://www.reprograma.com.br/assets/img/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
-
-    <div id="tudo">
-        <header>
-                <img src="imagem/logo-reprograma.png">
-        </header>
-
-<!--Menu de Navegação -->
-
-        <nav id="menu">
-                <a href="#boasvindas">Home</a> |
-                <a href="#sobre">Sobre</a> |
-                <a href="#hobbies">Hobbies</a> 
-                
-        </nav>
-
-
-
-        <section id="boasvindas"> 
-
-<!--Retrato escolhido-->
-                <img src="imagem/retrato10.jpg">
-
-<!--Seu nome -->                
-                <h1>Nina Solon</h1>
-
-<!--Suas Redes Sociais -->
-
-
-        <ul class="icones-sociais">
-            <li>
-                <a href="mailto:ninasolon@gmail.com" class="email">
-                    E-mail
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/ninasolon" class="github">
-                    Github
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/nina-solon-31905bb6/" class="linkedin">
-                    LinkedIn
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/nina.solon" class="facebook">
-                    Facebook
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/ninasolon/" class="instagram">
-                    Instagram
-                </a>
-            </li>
-            
-        </ul>
-   
-
-               
-            </section>
-        
-
-       <section id="sobre"> 
-           <h2>SOBRE</h2>
-            <p>Meio jornalista, meio publicitária. Estudante de programação front-end na {reprograma}</p>
-        </section>
-
-        <section id="hobbies"> 
-                <h2>Meus Hobbies</h2>
-                 <p>O que gosto de fazer</p>
-        <div class="icones">
-                 <ul class="hobbies">
-                    <li>
-                        <img src="imagem/png/Internet Browsing.png">
-                        <p>Dev Front-end</p>
-                    </li>
-                    <li>
-                        <img src="imagem/png/Creative Writing.png">
-                        <p>Escrita Criativa</p>
-                    </li>
-                    <li>
-                        <img src="imagem/png/Reading.png">
-                        <p>Leitura</p>
-                    </li>
-                    <li>
-                        <img src="imagem/png/People Watching.png">
-                        <p>People Watching</p>
-                    </li>
-                    <li>
-                        <img src="imagem/png/Animal Care.png">
-                        <p>Animais</p>
-                    </li>
-                    <li>
-                        <img src="imagem/png/Watching Movies.png">
-                        <p>Netflix</p>
-                    </li>
-                    <li>
-                        <img src="imagem/png/Dancing.png">
-                        <p>Dança</p>
-                    </li>
-
-                    <li>
-                        <img src="imagem/png/Karaoke.png">
-                        <p>Karaokê</p>
-                    </li>
-                    
-                </ul>
+    <nav class="navbar navbar-expand-lg bg-info text-white p-0">
+        <div class="container">
+            <div class="col-4">
+                <a href="http://reprograma.com.br/index.html"><img src="./assets/img/reprograma3.png"></a>
+            </div>
+            <div class="col-4">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link text-white" href="#sobre">Sobre</a>
+                        <a class="nav-item nav-link text-white" href="#portfolio">Portfólio</a>
+                        <a class="nav-item nav-link text-white" href="#contato">Contato</a>
+                    </div>
                 </div>
-             </section>
-        <footer>
-                <p>&copy;2019 - Nina Solon - Reprograma</p>
-        </footer>
-    </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <div class="row d-flex align-items-center container-perfil">
+            <div class="perfil col-6 d-flex flex-column align-items-center">
+                <img src="./assets/img/nina-solon.jpg">
+                <div class="text-center mt-3">
+                    <h4>Nina Solon</h4>
+                    <span class="font-italic">Desenvolvedora Front-end e Jornalista</span>
+                </div>
+            </div>
+            <div class="habilidades col-6 text-center">
+                <h5>Habilidades</h5>
+                <div class="row mt-5 mx-4 justify-content-center">
+                    <div class="skill">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-sass"></i>
+                        <p>Sass</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-book"></i>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Design responsivo</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-file-alt"></i>
+                        <p>Webwriting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre text-white text-center py-5">
+        <div class="container">
+            <h4 class="mb-4">Sobre</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vel omnis quasi sint dolor accusamus odio accusantium ab reiciendis. Accusantium deserunt iste ipsum at odio debitis eaque alias maiores rerum!</p>
+        </div>
+    </section>
+
+    <section class="text-center py-5" id="portfolio">
+        <div class="container">
+            <h4>Portfólio</h4>
+            <div class="card-group mt-5">
+                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
+                    <img class="card-img-top w-100" src="./assets/img/01-thumbnail.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
+                    <img class="card-img-top w-100" src="./assets/img/02-thumbnail.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
+                    <img class="card-img-top w-100" src="./assets/img/03-thumbnail.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group mt-5">
+                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
+                    <img class="card-img-top w-100" src="./assets/img/04-thumbnail.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 4</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
+                    <img class="card-img-top w-100" src="./assets/img/05-thumbnail.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 5</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
+                    <img class="card-img-top w-100" src="./assets/img/06-thumbnail.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 6</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center py-5 text-dark d-flex align-items-center" id="contato">
+        <div class="container">
+            <h4>Contato</h4>
+            <div class="redes-sociais mt-2">
+                <a class="mx-1" href="https://github.com/ninasolon" target="_blank"><i class="fab fa-github-alt"></i></a>
+                <a class="mx-1" href="https://www.linkedin.com/in/nina-solon-31905bb6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="mx-1" href="mailto:ninasolon@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <form>
+                <div class="row form-input">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Telefone">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-6">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                            placeholder="Mensagem"></textarea>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-form btn text-white text-uppercase">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="rodape text-white text-center py-2">
+        <small>Desenvolvido por Nina Solon <span><a href="http://reprograma.com.br/index.html" target="_blank">{reprograma}</a></span> 2019</small>
+    </footer>
+
+    <script src="./assets/js/jquery.slim.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>

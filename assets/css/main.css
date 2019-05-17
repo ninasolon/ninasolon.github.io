@@ -1,0 +1,103 @@
+nav {
+    /* background-color: #080A26; */
+}
+
+nav img {
+    width: 150px;    
+}
+
+nav a:hover {
+    color: #2A3852!important;
+}
+
+.cabecalho {
+    background-image: url("../img/markus-spiske-518966-unsplash.jpg");
+    background-size: cover; 
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.skill {
+    width: 130px;
+    margin: 5px 0;
+}
+
+.skill i {
+    font-size: 40px;
+    color: #2A3852;
+}
+
+.sobre {
+    background-color: #2A3852;
+}
+
+.sobre p {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.form-input {
+    margin: 6vh 12vw;
+}
+
+.redes-sociais a {
+    color: #2A3852;
+    font-size: 28px;
+}
+
+.redes-sociais a:hover {
+    color: #16A2B8;
+}
+
+.btn-form {
+    background-color: #EB2805;
+}
+
+.btn-form:hover {
+    background-color: #EE644C;
+}
+
+.rodape {
+    background-color: #2A3852;
+}
+
+.rodape a {
+    color: #16A2B8;
+    text-decoration: none;
+}
+
+.card-container {
+    background-color: #EE644C;
+}
+
+/* checar responsivo no bootstrap */
+@media (max-width: 420px) {
+    .container-perfil {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .habilidades {
+        max-width: 90%;
+        margin-top: 50px;
+    }
+
+    .skill {
+        width: 90px;
+    }
+
+    .form-input {
+        flex-direction: column;
+    }
+
+    .form-input > div {
+        max-width: 100%;
+    }
+}
