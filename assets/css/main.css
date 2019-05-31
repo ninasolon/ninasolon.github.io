@@ -1,9 +1,9 @@
-/* nav img {
-    width: 150px;    
-} */
-
-.link-reprograma:hover {
+a:hover {
     text-decoration: none;
+}
+
+.sobre, .rodape {
+    background-color: #2A3852;
 }
 
 .logo-reprograma {
@@ -18,9 +18,18 @@ nav a:hover {
     color: #2A3852!important;
 }
 
-.perfil img {
-    width: 200px;
-    border-radius: 50%;
+.foto-nina {
+    height: 400px;
+    border-radius: 8%;
+}
+
+.redes-sociais a:hover {
+    color: #17a2b8!important;
+}
+
+.redes-sociais i {
+    color: #2A3852;
+    font-size: 28px;
 }
 
 .skill {
@@ -29,39 +38,7 @@ nav a:hover {
 }
 
 .skill i {
-    font-size: 40px;
-    color: #2A3852;
-}
-
-.sobre {
-    background-color: #2A3852;
-}
-
-.sobre p {
-    margin: 0 auto;
-    width: 60%;
-}
-
-.form-input {
-    margin: 6vh 12vw;
-}
-
-.redes-sociais a {
-    color: #2A3852;
-    font-size: 28px;
-}
-
-.redes-sociais a:hover {
-    color: #16A2B8;
-}
-
-.rodape {
-    background-color: #2A3852;
-}
-
-.rodape a {
-    color: #16A2B8;
-    text-decoration: none;
+    font-size: 36px;
 }
 
 .card-container {
@@ -85,17 +62,12 @@ nav a:hover {
     background-image: url(../img/m-maravilhosa.png)
 }
 
-.link-modal:hover {
-    text-decoration: none;
+.rodape a {
+    color: #16A2B8;
 }
 
 /* checar responsivo no bootstrap */
 @media (max-width: 420px) {
-    .container-perfil {
-        flex-direction: column;
-        width: 100vw;
-    }
-
     .habilidades {
         max-width: 90%;
         margin-top: 50px;
@@ -103,13 +75,5 @@ nav a:hover {
 
     .skill {
         width: 90px;
-    }
-
-    .form-input {
-        flex-direction: column;
-    }
-
-    .form-input > div {
-        max-width: 100%;
     }
 }
