@@ -32,6 +32,10 @@ nav a:hover {
     font-size: 28px;
 }
 
+.sobre-descricao span {
+    font-weight: 500;
+}
+
 .skill {
     width: 130px;
     margin: 5px 0;
