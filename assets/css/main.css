@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 .card-img {
-    height: 248.5px;
+    min-height: 248.5px;
     background-size: cover;
 }
 
@@ -59,7 +59,8 @@ nav a:hover {
 }
 
 .card-todolist {
-    background-image: url(../img/to-do-list2.png)
+    background-image: url(../img/to-do-list2.png);
+    background-position-x: center;
 }
 
 .card-marielle {
@@ -72,12 +73,11 @@ nav a:hover {
 
 /* checar responsivo no bootstrap */
 @media (max-width: 420px) {
-    .habilidades {
-        max-width: 90%;
-        margin-top: 50px;
+    .skill {
+        width: 100px;
     }
 
-    .skill {
-        width: 90px;
+    .card-img {
+        min-height: 300px;
     }
 }
