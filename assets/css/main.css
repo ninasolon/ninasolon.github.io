@@ -1,22 +1,21 @@
-nav {
-    /* background-color: #080A26; */
+/* nav img {
+    width: 150px;    
+} */
+
+.link-reprograma:hover {
+    text-decoration: none;
 }
 
-nav img {
-    width: 150px;    
+.logo-reprograma {
+    font-weight: normal;
+}
+
+.logo-reprograma span {
+    font-weight: lighter;
 }
 
 nav a:hover {
     color: #2A3852!important;
-}
-
-.cabecalho {
-    background-image: url("../img/markus-spiske-518966-unsplash.jpg");
-    background-size: cover; 
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .perfil img {
@@ -56,14 +55,6 @@ nav a:hover {
     color: #16A2B8;
 }
 
-.btn-form {
-    background-color: #EB2805;
-}
-
-.btn-form:hover {
-    background-color: #EE644C;
-}
-
 .rodape {
     background-color: #2A3852;
 }
@@ -74,7 +65,28 @@ nav a:hover {
 }
 
 .card-container {
-    background-color: #EE644C;
+    border-radius: 5px!important;
+}
+
+.card-img {
+    height: 248.5px;
+    background-size: cover;
+}
+
+.card-defemde {
+    background-image: url(../img/defemde.png)
+}
+
+.card-todolist {
+    background-image: url(../img/to-do-list2.png)
+}
+
+.card-marielle {
+    background-image: url(../img/m-maravilhosa.png)
+}
+
+.link-modal:hover {
+    text-decoration: none;
 }
 
 /* checar responsivo no bootstrap */

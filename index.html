@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg bg-info text-white p-0">
         <div class="container">
             <div class="col-4">
-                <a href="http://reprograma.com.br/index.html"><img src="./assets/img/reprograma3.png"></a>
+                <a class="text-white link-reprograma" href="http://reprograma.com.br/index.html" target="_blank"><h4 class="logo-reprograma">{re<span>programa</span>}</h4></a>
             </div>
             <div class="col-4">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -26,7 +26,7 @@
                     <div class="navbar-nav ml-auto">
                         <a class="nav-item nav-link text-white" href="#sobre">Sobre</a>
                         <a class="nav-item nav-link text-white" href="#portfolio">Portfólio</a>
-                        <a class="nav-item nav-link text-white" href="#contato">Contato</a>
+                        <!-- <a class="nav-item nav-link text-white" href="#contato">Contato</a> -->
                     </div>
                 </div>
             </div>
@@ -40,11 +40,16 @@
                 <div class="text-center mt-3">
                     <h4>Nina Solon</h4>
                     <span class="font-italic">Desenvolvedora Front-end e Jornalista</span>
+                    <div class="redes-sociais mt-2">
+                        <a class="mx-2" href="https://github.com/ninasolon" target="_blank"><i class="fab fa-github-alt"></i></a>
+                        <a class="mx-2" href="https://www.linkedin.com/in/nina-solon-31905bb6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a class="mx-2" href="mailto:ninasolon@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="habilidades col-6 text-center">
                 <h5>Habilidades</h5>
-                <div class="row mt-5 mx-4 justify-content-center">
+                <div class="row mt-4 mx-4 justify-content-center">
                     <div class="skill">
                         <i class="fab fa-html5"></i>
                         <p>HTML</p>
@@ -74,8 +79,8 @@
                         <p>Git</p>
                     </div>
                     <div class="skill">
-                        <i class="fas fa-mobile-alt"></i>
-                        <p>Design responsivo</p>
+                        <i class="fas fa-sync-alt"></i>
+                        <p>Scrum</p>
                     </div>
                     <div class="skill">
                         <i class="fas fa-file-alt"></i>
@@ -89,64 +94,115 @@
     <section id="sobre" class="sobre text-white text-center py-5">
         <div class="container">
             <h4 class="mb-4">Sobre</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vel omnis quasi sint dolor accusamus odio accusantium ab reiciendis. Accusantium deserunt iste ipsum at odio debitis eaque alias maiores rerum!</p>
+            <p class="my-2">Aluna do bootcamp de front-end da {reprograma}, conclusão em julho de 2019. Formada em Comunicação Social, migrando para a área de Tecnologia da Informação. Além de front, tenho interesse em metodologias ágeis e linguagens de back-end, como Python e Clojure.</p>
+            <p class="my-2">Graduação em Publicidade e Propaganda (UFRJ) e especialização em Jornalismo Cultural (UERJ). Experiência profissional com redação (impressos e web) e assessoria de imprensa.</p>
         </div>
     </section>
 
-    <section class="text-center py-5" id="portfolio">
+    <section class="text-center py-5 mb-5" id="portfolio">
         <div class="container">
             <h4>Portfólio</h4>
             <div class="card-group mt-5">
-                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
-                    <img class="card-img-top w-100" src="./assets/img/01-thumbnail.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="card col-sm mx-sm-5 p-0 bg-light text-dark card-container">
+                    <div class="card-img card-defemde"></div>
+                    <div class="card-body p-3">
+                        <h5 class="card-title mb-1">Rede Feminista de Juristas</h5>
+                        <p class="card-text">Maio/2019</p>
+                        <a href="#" class="btn btn-danger btn-sm text-white text-uppercase" data-toggle="modal" data-target="#modalDeFEMde">Ver mais</a>
                     </div>
                 </div>
 
-                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
-                    <img class="card-img-top w-100" src="./assets/img/02-thumbnail.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <!-- modal deFEMde -->
+                <div class="modal fade" id="modalDeFEMde" tabindex="-1" role="dialog" aria-labelledby="modalDeFEMdeTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalDeFEMdeTitle">Rede Feminista de Juristas</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-left">Projeto com cliente real desenvolvido na {reprograma}, utilizando HTML, Sass e jQuery</p>
+                            <img src="./assets/img/defemde.png" alt="" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="ninasolon.github.io/defemde" class="btn btn-info text-white link-modal">Ver site</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
-                    <img class="card-img-top w-100" src="./assets/img/03-thumbnail.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 3</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <!-- fim modal deFEMde -->
+
+                <div class="card col-sm mx-sm-5 p-0 bg-light text-dark card-container">
+                    <div class="card-img card-todolist"></div>
+                    <div class="card-body p-3">
+                        <h5 class="card-title mb-1">To Do List</h5>
+                        <p class="card-text">Maio/2019</p>
+                        <a href="#" class="btn btn-danger btn-sm text-white text-uppercase" data-toggle="modal" data-target="#modalToDoList">Ver mais</a>
                     </div>
                 </div>
-            </div>
-            <div class="card-group mt-5">
-                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
-                    <img class="card-img-top w-100" src="./assets/img/04-thumbnail.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 4</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <!-- modal to do list -->
+                <div class="modal fade" id="modalToDoList" tabindex="-1" role="dialog" aria-labelledby="modalToDoListTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalToDoListTitle">To Do List</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-left">Primeiro projeto com JavaScript desenvolvido na {reprograma}</p>
+                            <img src="./assets/img/to-do-list2.png" alt="" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="ninasolon.github.io/todolist" class="btn btn-info text-white link-modal">Ver site</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
-                    <img class="card-img-top w-100" src="./assets/img/05-thumbnail.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 5</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <!-- fim modal to do list -->
+
+                <div class="card col-sm mx-sm-5 p-0 bg-light text-dark card-container">
+                    <div class="card-img card-marielle"></div>
+                    <div class="card-body p-3">
+                        <h5 class="card-title mb-1">Marielle Franco</h5>
+                        <p class="card-text">Abril/2019</p>
+                        <a href="#" class="btn btn-danger btn-sm text-white text-uppercase" data-toggle="modal" data-target="#modalMarielle">Ver mais</a>
                     </div>
                 </div>
-                <div class="card col-sm mx-sm-5 border-0 p-0 card-container text-white">
-                    <img class="card-img-top w-100" src="./assets/img/06-thumbnail.jpg" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto 6</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                <!-- modal marielle -->
+                <div class="modal fade" id="modalMarielle" tabindex="-1" role="dialog" aria-labelledby="modalMarielleTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalMarielleTitle">MdeMaravilhosa - Marielle Franco</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-left">Primeiro projeto com HTML e CSS desenvolvido na {reprograma}</p>
+                            <img src="./assets/img/m-maravilhosa.png" alt="" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="ninasolon.github.io/mariellefranco" class="btn btn-info text-white link-modal">Ver site</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                        </div>
                     </div>
                 </div>
+                <!-- fim modal marielle -->
             </div>
         </div>
     </section>
 
-    <section class="text-center py-5 text-dark d-flex align-items-center" id="contato">
+    <!-- <section class="text-center py-5 text-dark d-flex align-items-center" id="contato">
         <div class="container">
             <h4>Contato</h4>
             <div class="redes-sociais mt-2">
@@ -155,7 +211,7 @@
                 <a class="mx-1" href="mailto:ninasolon@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
             </div>
 
-            <form>
+            <form method="POST" action="mailto:ninasolon@gmail.com">
                 <div class="row form-input">
                     <div class="col-6">
                         <div class="form-group">
@@ -176,10 +232,10 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn-form btn text-white text-uppercase">Enviar</button>
+                <button type="button" class="btn btn-danger text-white text-uppercase">Enviar</button>
             </form>
         </div>
-    </section>
+    </section> -->
 
     <footer class="rodape text-white text-center py-2">
         <small>Desenvolvido por Nina Solon <span><a href="http://reprograma.com.br/index.html" target="_blank">{reprograma}</a></span> 2019</small>
